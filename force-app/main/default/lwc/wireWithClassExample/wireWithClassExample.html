@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Contact List" icon-name="standard:contact">
+        <ul class="slds-m-around_medium">
+            <template for:each={contacts.data} for:item="contact">
+                <li key={contact.Id} class="slds-m-bottom_small">
+                    <p>{contact.Name} </p> 
+                    <p>{contact.Email}</p>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
